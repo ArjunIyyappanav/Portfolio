@@ -1,0 +1,3388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arjun I | Portfolio</title>
+
+<!-- =========================================================
+     FONTS
+========================================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Special+Elite&display=swap"
+    rel="stylesheet">
+
+
+<style>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --bg: #f7f7f7;
+    --white: #ffffff;
+
+    --text: #333333;
+    --muted: #777777;
+    --light-muted: #999999;
+
+    --border: #d8d8d8;
+    --border-light: #e7e7e7;
+
+    --link: #2d6ca2;
+
+    --typewriter:
+        "Special Elite",
+        "Courier New",
+        monospace;
+
+    --pixel:
+        "Press Start 2P",
+        monospace;
+}
+
+
+/* =========================================================
+   BASE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+}
+
+a {
+
+    color: var(--link);
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+
+    width: 94%;
+
+    max-width: 1180px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+
+    background: var(--white);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.nav {
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+
+    font-family: var(--typewriter);
+
+    font-size: 18px;
+
+    color: #333;
+}
+
+.logo span {
+
+    color: #888;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 13px;
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 24px;
+}
+
+.nav-links a {
+
+    color: #555;
+
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+
+    color: #222;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile {
+
+    background: var(--white);
+
+    border:
+        1px solid var(--border);
+
+    margin-top: 24px;
+
+    padding: 24px;
+}
+
+.profile-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        270px;
+
+    gap: 30px;
+}
+
+.profile-main {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+.avatar {
+
+    width: 76px;
+
+    height: 76px;
+
+    border:
+        1px solid #bbb;
+
+    background: #eee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #555;
+
+    flex-shrink: 0;
+}
+
+.profile-info h1 {
+
+    margin: 0 0 2px;
+
+    font-family: var(--typewriter);
+
+    font-size: 27px;
+
+    font-weight: normal;
+}
+
+
+/* =========================================================
+   PIXEL QUIRK
+========================================================= */
+
+.tiny-comment {
+
+    font-family: var(--pixel);
+
+    font-size: 7px;
+
+    color: #aaa;
+
+    font-weight: normal;
+
+    margin-left: 7px;
+
+    vertical-align: middle;
+}
+
+.username {
+
+    color: #777;
+
+    margin-bottom: 8px;
+}
+
+.tagline {
+
+    color: #555;
+
+    max-width: 700px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status-line {
+
+    margin-top: 9px;
+
+    color: #888;
+
+    font-family: var(--pixel);
+
+    font-size: 7px;
+}
+
+.status-dot {
+
+    display: inline-block;
+
+    width: 6px;
+
+    height: 6px;
+
+    margin-right: 5px;
+
+    background: #777;
+
+    border-radius: 50%;
+}
+
+.cursor {
+
+    display: inline-block;
+
+    margin-left: 2px;
+
+    animation:
+        blink 1s steps(2) infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    45% {
+        opacity: 1;
+    }
+
+    46%,
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================================================
+   PROFILE LINKS
+========================================================= */
+
+.profile-links {
+
+    margin-top: 13px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+}
+
+.profile-links a {
+
+    font-size: 13px;
+}
+
+.profile-phone {
+
+    color: #888;
+}
+
+.mini-note {
+
+    margin-top: 13px;
+
+    color: #aaa;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+    border-left:
+        1px solid #ddd;
+
+    padding-left: 25px;
+}
+
+.quick-stat {
+
+    margin-bottom: 12px;
+}
+
+.quick-stat:last-child {
+
+    margin-bottom: 0;
+}
+
+.quick-stat label {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+}
+
+.quick-stat strong {
+
+    font-size: 18px;
+
+    font-weight: normal;
+
+    color: #333;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section {
+
+    margin-top: 28px;
+}
+
+.section-title {
+
+    margin: 0 0 12px;
+
+    padding-bottom: 7px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    font-family: var(--typewriter);
+
+    font-size: 17px;
+
+    font-weight: normal;
+}
+
+.section-description {
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   PIXEL SECTION NOTE
+========================================================= */
+
+.section-note {
+
+    margin-top: -7px;
+
+    margin-bottom: 12px;
+
+    color: #999;
+
+    font-family: var(--pixel);
+
+    font-size: 7px;
+}
+
+.section-note span {
+
+    color: #555;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.main-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        320px;
+
+    gap: 22px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   GENERIC BOX
+========================================================= */
+
+.box {
+
+    background: var(--white);
+
+    border:
+        1px solid var(--border);
+}
+
+
+/* =========================================================
+   CODING PROFILES
+========================================================= */
+
+.coding-row {
+
+    display: grid;
+
+    grid-template-columns:
+        110px
+        1fr
+        100px
+        100px;
+
+    align-items: center;
+
+    padding:
+        13px 15px;
+
+    border-bottom:
+        1px solid var(--border-light);
+
+    transition:
+        background 0.15s ease;
+}
+
+.coding-row:last-child {
+
+    border-bottom: none;
+}
+
+.coding-row:hover {
+
+    background: #fafafa;
+}
+
+.platform {
+
+    font-weight: bold;
+
+    color: #444;
+}
+
+.coding-row:hover
+.platform::before {
+
+    content: "> ";
+
+    color: #999;
+}
+
+.platform-user {
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+.rating {
+
+    text-align: right;
+}
+
+.rating strong {
+
+    font-weight: normal;
+}
+
+.rating small {
+
+    display: block;
+
+    color: #999;
+
+    font-size: 10px;
+}
+
+.profile-action {
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   LEETCODE
+========================================================= */
+
+.leetcode-summary {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-bottom:
+        1px solid #ddd;
+}
+
+.lc-stat {
+
+    padding: 14px;
+
+    border-right:
+        1px solid #ddd;
+}
+
+.lc-stat:last-child {
+
+    border-right: none;
+}
+
+.lc-stat label {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 11px;
+}
+
+.lc-stat strong {
+
+    font-size: 19px;
+
+    font-weight: normal;
+}
+
+
+/* =========================================================
+   SOLVE BREAKDOWN
+========================================================= */
+
+.solve-breakdown {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-bottom:
+        1px solid #ddd;
+}
+
+.solve-item {
+
+    padding: 13px;
+
+    border-right:
+        1px solid #ddd;
+}
+
+.solve-item:last-child {
+
+    border-right: none;
+}
+
+.solve-item label {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 11px;
+}
+
+.solve-item strong {
+
+    font-size: 17px;
+
+    font-weight: normal;
+}
+
+
+/* =========================================================
+   RECENT PROBLEMS
+========================================================= */
+
+.problem-list {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.problem-list li {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding:
+        9px 14px;
+
+    border-bottom:
+        1px solid #eee;
+
+    font-size: 13px;
+}
+
+.problem-list li:last-child {
+
+    border-bottom: none;
+}
+
+.problem-date {
+
+    color: #999;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+.experience {
+
+    padding: 16px;
+
+    border-bottom:
+        1px solid #e3e3e3;
+}
+
+.experience:last-child {
+
+    border-bottom: none;
+}
+
+.experience-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.experience h3 {
+
+    margin: 0;
+
+    font-family: var(--typewriter);
+
+    font-size: 14px;
+
+    font-weight: normal;
+}
+
+.experience-date {
+
+    color: #888;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+.experience-company {
+
+    color: #666;
+
+    margin-top: 2px;
+
+    font-size: 13px;
+}
+
+.experience ul {
+
+    margin: 9px 0 0;
+
+    padding-left: 20px;
+
+    color: #555;
+
+    font-size: 13px;
+}
+
+.experience li {
+
+    margin-bottom: 4px;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.project {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        auto;
+
+    gap: 20px;
+
+    padding: 16px;
+
+    border-bottom:
+        1px solid #e3e3e3;
+
+    transition:
+        background 0.15s ease,
+        padding-left 0.15s ease;
+}
+
+.project:last-child {
+
+    border-bottom: none;
+}
+
+.project:hover {
+
+    background: #fafafa;
+
+    padding-left: 19px;
+}
+
+.project h3 {
+
+    margin: 0 0 4px;
+
+    font-family: var(--typewriter);
+
+    font-size: 14px;
+
+    font-weight: normal;
+}
+
+.project-description {
+
+    color: #555;
+
+    font-size: 13px;
+
+    margin:
+        5px 0 9px;
+}
+
+.tech {
+
+    color: #888;
+
+    font-size: 11px;
+}
+
+.project-links {
+
+    text-align: right;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+}
+
+.project-links a {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    transition:
+        margin-left 0.15s ease;
+}
+
+.project-links a:hover {
+
+    margin-left: 3px;
+}
+
+
+/* =========================================================
+   CODECHEF
+========================================================= */
+
+.codechef-stats {
+
+    padding: 14px;
+}
+
+.cc-line {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 6px 0;
+
+    border-bottom:
+        1px solid #eee;
+}
+
+.cc-line:last-child {
+
+    border-bottom: none;
+}
+
+.cc-label {
+
+    color: #888;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills {
+
+    padding: 15px;
+}
+
+.skill-group {
+
+    margin-bottom: 13px;
+}
+
+.skill-group:last-child {
+
+    margin-bottom: 0;
+}
+
+.skill-group label {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 11px;
+
+    margin-bottom: 5px;
+}
+
+.skill-list {
+
+    color: #444;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education {
+
+    padding: 15px;
+
+    border-bottom:
+        1px solid #e3e3e3;
+}
+
+.education:last-child {
+
+    border-bottom: none;
+}
+
+.education-header {
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.education h3 {
+
+    margin: 0;
+
+    font-family: var(--typewriter);
+
+    font-size: 14px;
+
+    font-weight: normal;
+}
+
+.education-date {
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+.education p {
+
+    margin: 3px 0;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ACHIEVEMENTS
+========================================================= */
+
+.achievement {
+
+    padding:
+        13px 15px;
+
+    border-bottom:
+        1px solid #eee;
+
+    color: #555;
+
+    font-size: 13px;
+}
+
+.achievement:last-child {
+
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   RESUME
+========================================================= */
+
+.resume-box {
+
+    padding: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.resume-title {
+
+    font-family: var(--typewriter);
+
+    font-size: 14px;
+}
+
+.resume-subtitle {
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+.resume-button {
+
+    border:
+        1px solid #aaa;
+
+    background: #f3f3f3;
+
+    padding:
+        7px 14px;
+
+    color: #444;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+.resume-button:hover {
+
+    background: #e9e9e9;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    margin-top: 45px;
+
+    border-top:
+        1px solid var(--border);
+
+    padding:
+        22px 0;
+
+    text-align: center;
+
+    color: #999;
+
+    font-size: 11px;
+}
+
+.footer-joke {
+
+    margin-top: 8px;
+
+    color: #bbb;
+
+    font-family: var(--pixel);
+
+    font-size: 7px;
+}
+
+.keyboard-hint {
+
+    color: #aaa;
+
+    font-family: var(--pixel);
+
+    font-size: 6px;
+
+    margin-left: 5px;
+}
+
+kbd {
+
+    border:
+        1px solid #ccc;
+
+    background: #f3f3f3;
+
+    padding:
+        1px 4px;
+
+    border-radius: 2px;
+
+    font-family: monospace;
+
+    font-size: 9px;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .profile-layout {
+
+        grid-template-columns: 1fr;
+    }
+
+    .quick-stats {
+
+        border-left: none;
+
+        border-top:
+            1px solid #ddd;
+
+        padding-left: 0;
+
+        padding-top: 15px;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 15px;
+    }
+
+    .main-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .coding-row {
+
+        grid-template-columns:
+            100px
+            1fr
+            80px;
+    }
+
+    .coding-row .profile-action {
+
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+
+        font-size: 13px;
+    }
+
+    .container {
+
+        width: 96%;
+    }
+
+    .nav {
+
+        height: auto;
+
+        min-height: 54px;
+    }
+
+    .nav-links {
+
+        display: none;
+    }
+
+    .profile {
+
+        padding: 18px;
+    }
+
+    .profile-main {
+
+        flex-direction: column;
+    }
+
+    .quick-stats {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .leetcode-summary {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .lc-stat:nth-child(2) {
+
+        border-right: none;
+    }
+
+    .lc-stat:nth-child(-n+2) {
+
+        border-bottom:
+            1px solid #ddd;
+    }
+
+    .solve-breakdown {
+
+        grid-template-columns: 1fr;
+    }
+
+    .solve-item {
+
+        border-right: none;
+
+        border-bottom:
+            1px solid #ddd;
+    }
+
+    .solve-item:last-child {
+
+        border-bottom: none;
+    }
+
+    .project {
+
+        grid-template-columns: 1fr;
+    }
+
+    .project-links {
+
+        text-align: left;
+    }
+
+    .experience-header,
+    .education-header {
+
+        flex-direction: column;
+
+        gap: 2px;
+    }
+
+    .experience-date,
+    .education-date {
+
+        text-align: left;
+    }
+
+    .tiny-comment {
+
+        display: block;
+
+        margin-left: 0;
+
+        margin-top: 4px;
+    }
+
+    .section-note {
+
+        font-size: 6px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+    <div class="container nav">
+
+
+        <div class="logo">
+
+            Arjun I
+
+            <span>
+                / portfolio
+            </span>
+
+        </div>
+
+
+        <nav class="nav-links">
+
+            <a href="#coding">
+                Coding
+            </a>
+
+            <a href="#experience">
+                Experience
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#education">
+                Education
+            </a>
+
+        </nav>
+
+
+    </div>
+
+</header>
+
+
+
+<main class="container">
+
+
+<!-- =========================================================
+     PROFILE
+========================================================= -->
+
+<section class="profile">
+
+
+    <div class="profile-layout">
+
+
+        <div class="profile-main">
+
+
+            <div class="avatar">
+                AI
+            </div>
+
+
+            <div class="profile-info">
+
+
+                <h1>
+
+                    Arjun I
+
+                    <span class="tiny-comment">
+                        // probably debugging
+                    </span>
+
+                </h1>
+
+
+                <div class="username">
+
+                    Electronics & Computer Engineering ·
+                    VIT Chennai
+
+                </div>
+
+
+                <div class="tagline">
+
+                    Software developer interested in backend
+                    systems, AI/RAG, machine learning and
+                    competitive programming.
+
+                </div>
+
+
+                <div class="status-line">
+
+                    <span class="status-dot"></span>
+
+                    <span id="statusText">
+                        currently compiling...
+                    </span>
+
+                    <span class="cursor">
+                        _
+                    </span>
+
+                </div>
+
+
+                <div class="profile-links">
+
+
+                    <a
+                        href="https://www.linkedin.com/"
+                        target="_blank">
+
+                        LinkedIn
+
+                    </a>
+
+
+                    <a
+                        href="https://github.com/ArjunIyyappanAv"
+                        target="_blank">
+
+                        GitHub
+
+                    </a>
+
+
+                    <a
+                        href="https://leetcode.com/u/Arjun_I/"
+                        target="_blank">
+
+                        LeetCode
+
+                    </a>
+
+
+                    <a
+                        href="https://www.codechef.com/users/arjuniyyappan"
+                        target="_blank">
+
+                        CodeChef
+
+                    </a>
+
+
+                    <a
+                        href="mailto:arjun.iyyappan.2005@gmail.com">
+
+                        arjun.iyyappan.2005@gmail.com
+
+                    </a>
+
+
+                    <span class="profile-phone">
+
+                        9952068248
+
+                    </span>
+
+
+                </div>
+
+
+                <div class="mini-note">
+
+                    coffee → code → debug → repeat
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK STATS -->
+
+        <div class="quick-stats">
+
+
+            <div class="quick-stat">
+
+                <label>
+                    CGPA
+                </label>
+
+                <strong>
+                    8.99
+                </strong>
+
+            </div>
+
+
+            <div class="quick-stat">
+
+                <label>
+                    Graduation
+                </label>
+
+                <strong>
+                    2027
+                </strong>
+
+            </div>
+
+
+            <div class="quick-stat">
+
+                <label>
+                    LeetCode
+                </label>
+
+                <strong>
+                    1450
+                </strong>
+
+            </div>
+
+
+            <div class="quick-stat">
+
+                <label>
+                    CodeChef
+                </label>
+
+                <strong>
+                    1230
+                </strong>
+
+            </div>
+
+
+            <div class="quick-stat">
+
+                <label>
+                    LC Solved
+                </label>
+
+                <strong>
+                    257
+                </strong>
+
+            </div>
+
+
+            <div class="quick-stat">
+
+                <label>
+                    CC Solved
+                </label>
+
+                <strong>
+                    95
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MAIN GRID
+========================================================= -->
+
+<div class="main-grid">
+
+
+<!-- =========================================================
+     LEFT COLUMN
+========================================================= -->
+
+<div>
+
+
+<!-- =========================================================
+     CODING PROFILES
+========================================================= -->
+
+<section id="coding" class="section">
+
+
+    <h2 class="section-title">
+        Coding Profiles
+    </h2>
+
+
+    <div class="box">
+
+
+        <!-- LEETCODE -->
+
+        <div class="coding-row">
+
+
+            <div class="platform">
+                LeetCode
+            </div>
+
+
+            <div>
+
+                <a
+                    href="https://leetcode.com/u/Arjun_I/"
+                    target="_blank">
+
+                    Arjun_I
+
+                </a>
+
+
+                <div class="platform-user">
+
+                    257 problems solved ·
+                    829 submissions
+
+                </div>
+
+            </div>
+
+
+            <div class="rating">
+
+                <strong>
+                    1450
+                </strong>
+
+                <small>
+                    Contest Rating
+                </small>
+
+            </div>
+
+
+            <div class="profile-action">
+
+                <a
+                    href="https://leetcode.com/u/Arjun_I/"
+                    target="_blank">
+
+                    Profile →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- CODECHEF -->
+
+        <div class="coding-row">
+
+
+            <div class="platform">
+                CodeChef
+            </div>
+
+
+            <div>
+
+                <a
+                    href="https://www.codechef.com/users/arjuniyyappan"
+                    target="_blank">
+
+                    arjuniyyappan
+
+                </a>
+
+
+                <div class="platform-user">
+
+                    95 problems solved ·
+                    10 contests
+
+                </div>
+
+            </div>
+
+
+            <div class="rating">
+
+                <strong>
+                    1230
+                </strong>
+
+                <small>
+                    Highest 1282
+                </small>
+
+            </div>
+
+
+            <div class="profile-action">
+
+                <a
+                    href="https://www.codechef.com/users/arjuniyyappan"
+                    target="_blank">
+
+                    Profile →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- GITHUB -->
+
+        <div class="coding-row">
+
+
+            <div class="platform">
+                GitHub
+            </div>
+
+
+            <div>
+
+                <a
+                    href="https://github.com/ArjunIyyappanAv"
+                    target="_blank">
+
+                    ArjunIyyappanAv
+
+                </a>
+
+
+                <div class="platform-user">
+
+                    Software projects, systems and AI experiments
+
+                </div>
+
+            </div>
+
+
+            <div class="rating">
+
+                <strong>
+                    Open
+                </strong>
+
+                <small>
+                    Repositories
+                </small>
+
+            </div>
+
+
+            <div class="profile-action">
+
+                <a
+                    href="https://github.com/ArjunIyyappanAv"
+                    target="_blank">
+
+                    GitHub →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LEETCODE STATISTICS
+========================================================= -->
+
+<section class="section">
+
+
+    <h2 class="section-title">
+        LeetCode Statistics
+    </h2>
+
+
+    <div class="box">
+
+
+        <div class="leetcode-summary">
+
+
+            <div class="lc-stat">
+
+                <label>
+                    Contest Rating
+                </label>
+
+                <strong>
+                    1,450
+                </strong>
+
+            </div>
+
+
+            <div class="lc-stat">
+
+                <label>
+                    Global Rank
+                </label>
+
+                <strong>
+                    633,132
+                </strong>
+
+            </div>
+
+
+            <div class="lc-stat">
+
+                <label>
+                    Problems Solved
+                </label>
+
+                <strong>
+                    257 / 4073
+                </strong>
+
+            </div>
+
+
+            <div class="lc-stat">
+
+                <label>
+                    Submissions
+                </label>
+
+                <strong>
+                    829
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="solve-breakdown">
+
+
+            <div class="solve-item">
+
+                <label>
+                    Easy
+                </label>
+
+                <strong>
+                    115 / 969
+                </strong>
+
+            </div>
+
+
+            <div class="solve-item">
+
+                <label>
+                    Medium
+                </label>
+
+                <strong>
+                    124 / 2124
+                </strong>
+
+            </div>
+
+
+            <div class="solve-item">
+
+                <label>
+                    Hard
+                </label>
+
+                <strong>
+                    18 / 980
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="leetcode-summary">
+
+
+            <div class="lc-stat">
+
+                <label>
+                    Active Days
+                </label>
+
+                <strong>
+                    151
+                </strong>
+
+            </div>
+
+
+            <div class="lc-stat">
+
+                <label>
+                    Max Streak
+                </label>
+
+                <strong>
+                    12
+                </strong>
+
+            </div>
+
+
+            <div class="lc-stat">
+
+                <label>
+                    Following
+                </label>
+
+                <strong>
+                    4
+                </strong>
+
+            </div>
+
+
+            <div class="lc-stat">
+
+                <label>
+                    Followers
+                </label>
+
+                <strong>
+                    3
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RECENT PROBLEMS
+========================================================= -->
+
+<section class="section">
+
+
+    <h2 class="section-title">
+        Recent Problems
+    </h2>
+
+
+    <div class="box">
+
+
+        <ul class="problem-list">
+
+
+            <li>
+
+                <a href="#">
+                    Minimum Add to Make Parentheses Valid
+                </a>
+
+                <span class="problem-date">
+                    2 days ago
+                </span>
+
+            </li>
+
+
+            <li>
+
+                <a href="#">
+                    Score of Parentheses
+                </a>
+
+                <span class="problem-date">
+                    2 days ago
+                </span>
+
+            </li>
+
+
+            <li>
+
+                <a href="#">
+                    Valid Parenthesis String
+                </a>
+
+                <span class="problem-date">
+                    4 days ago
+                </span>
+
+            </li>
+
+
+            <li>
+
+                <a href="#">
+                    Longest Valid Parentheses
+                </a>
+
+                <span class="problem-date">
+                    5 days ago
+                </span>
+
+            </li>
+
+
+            <li>
+
+                <a href="#">
+                    Generate Parentheses
+                </a>
+
+                <span class="problem-date">
+                    6 days ago
+                </span>
+
+            </li>
+
+
+            <li>
+
+                <a href="#">
+                    Maximum Nesting Depth of the Parentheses
+                </a>
+
+                <span class="problem-date">
+                    10 days ago
+                </span>
+
+            </li>
+
+
+            <li>
+
+                <a href="#">
+                    Customers Who Never Order
+                </a>
+
+                <span class="problem-date">
+                    11 days ago
+                </span>
+
+            </li>
+
+
+            <li>
+
+                <a href="#">
+                    Duplicate Emails
+                </a>
+
+                <span class="problem-date">
+                    11 days ago
+                </span>
+
+            </li>
+
+
+            <li>
+
+                <a href="#">
+                    Employees Earning More Than Their Managers
+                </a>
+
+                <span class="problem-date">
+                    11 days ago
+                </span>
+
+            </li>
+
+
+            <li>
+
+                <a href="#">
+                    Combine Two Tables
+                </a>
+
+                <span class="problem-date">
+                    11 days ago
+                </span>
+
+            </li>
+
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section id="experience" class="section">
+
+
+    <h2 class="section-title">
+        Experience
+    </h2>
+
+
+    <div class="box">
+
+
+        <div class="experience">
+
+
+            <div class="experience-header">
+
+                <h3>
+                    Software Developer — Project Collaboration
+                </h3>
+
+                <span class="experience-date">
+                    June – July 2026
+                </span>
+
+            </div>
+
+
+            <div class="experience-company">
+
+                ICMR National Institute of Epidemiology,
+                Chennai
+
+            </div>
+
+
+            <ul>
+
+                <li>
+
+                    Developed a multi-user AI-powered clinical
+                    report generation platform using Next.js,
+                    PostgreSQL, secure authentication and a
+                    locally hosted LLM.
+
+                </li>
+
+
+                <li>
+
+                    Packaged and delivered the application for
+                    deployment on ICMR-NIE's on-premises
+                    infrastructure.
+
+                </li>
+
+
+                <li>
+
+                    Collaborated with researchers to support
+                    institutional workflows.
+
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+
+        <div class="experience">
+
+
+            <div class="experience-header">
+
+                <h3>
+                    Summer Research Intern
+                </h3>
+
+                <span class="experience-date">
+                    March – October 2025
+                </span>
+
+            </div>
+
+
+            <div class="experience-company">
+
+                Centre for Advanced Data Sciences,
+                VIT Chennai
+
+            </div>
+
+
+            <ul>
+
+                <li>
+
+                    Developed a South Indian food classification
+                    model using YOLOv11 with 72.7% accuracy,
+                    outperforming YOLOv8 by 3.7%.
+
+                </li>
+
+
+                <li>
+
+                    Improved dataset collection and annotation
+                    pipelines, increasing labeling efficiency
+                    by 30%.
+
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
+
+<section id="projects" class="section">
+
+
+    <h2 class="section-title">
+        Projects
+    </h2>
+
+
+    <div class="section-note">
+
+        <span>&gt;</span>
+        things I've built instead of touching grass
+
+    </div>
+
+
+    <div class="box">
+
+
+        <!-- CRM -->
+
+        <div class="project">
+
+
+            <div>
+
+                <h3>
+
+                    Real Estate CRM & Telephony Platform
+
+                    <span style="
+                        font-family:Arial,Helvetica,sans-serif;
+                        font-size:11px;
+                        color:#888;
+                    ">
+                        · Production
+                    </span>
+
+                </h3>
+
+
+                <div class="project-description">
+
+                    Full-stack CRM replacing manual notebook-based
+                    lead tracking. Currently managing 150+ active
+                    leads across sales and administration.
+
+                </div>
+
+
+                <div class="tech">
+
+                    Next.js · NeonDB · Webhooks · REST APIs · Exotel
+
+                </div>
+
+            </div>
+
+
+            <div class="project-links">
+
+                <a
+                    href="https://axions-crm.vercel.app"
+                    target="_blank">
+
+                    Live Demo →
+
+                </a>
+
+
+                <a
+                    href="https://github.com/rk-vit/CRM_tool"
+                    target="_blank">
+
+                    GitHub →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- MAPREDUCE -->
+
+        <div class="project">
+
+
+            <div>
+
+                <h3>
+                    MapReduce-Based Desktop Search Engine
+                </h3>
+
+
+                <div class="project-description">
+
+                    Custom MapReduce framework in Java featuring
+                    generic Mapper/Reducer APIs, input splitting,
+                    shuffle-sort and parallel execution using
+                    ExecutorService. Includes a multithreaded
+                    inverted-index search engine.
+
+                </div>
+
+
+                <div class="tech">
+
+                    Java · Spring Boot · MapReduce · Multithreading
+
+                </div>
+
+            </div>
+
+
+            <div class="project-links">
+
+                <a
+                    href="https://github.com/ArjunIyyappanav/desktop_search_engine"
+                    target="_blank">
+
+                    GitHub →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PEERPORT -->
+
+        <div class="project">
+
+
+            <div>
+
+                <h3>
+                    PeerPort
+                </h3>
+
+
+                <div class="project-description">
+
+                    Full-stack skills exchange platform for VIT
+                    Chennai students to form teams, collaborate
+                    and teach. Includes institute-only
+                    authentication and secure JWT-based access.
+
+                </div>
+
+
+                <div class="tech">
+
+                    React · Redux · Node.js · Express · MongoDB
+                    · JWT · Tailwind
+
+                </div>
+
+            </div>
+
+
+            <div class="project-links">
+
+                <a
+                    href="https://peerport.vercel.app"
+                    target="_blank">
+
+                    Live Demo →
+
+                </a>
+
+
+                <a
+                    href="https://github.com/ArjunIyyappanAv/Swapify"
+                    target="_blank">
+
+                    GitHub →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- HOTRELOAD -->
+
+        <div class="project">
+
+
+            <div>
+
+                <h3>
+                    HotReload
+                </h3>
+
+
+                <div class="project-description">
+
+                    Cross-platform hot reload CLI that automates
+                    rebuild and restart workflows with debouncing
+                    and process-tree management. Reduced developer
+                    restart overhead by approximately 90%.
+
+                </div>
+
+
+                <div class="tech">
+
+                    Go · fsnotify · CLI · Process Management
+
+                </div>
+
+            </div>
+
+
+            <div class="project-links">
+
+                <a
+                    href="https://github.com/ArjunIyyappanAv/hotreload"
+                    target="_blank">
+
+                    GitHub →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- EVIDENCE RAG -->
+
+        <div class="project">
+
+
+            <div>
+
+                <h3>
+                    Evidence-RAG
+                </h3>
+
+
+                <div class="project-description">
+
+                    Retrieval-augmented generation project focused
+                    on grounding generated responses in retrieved
+                    evidence.
+
+                </div>
+
+
+                <div class="tech">
+
+                    RAG · LLM · Python
+
+                </div>
+
+            </div>
+
+
+            <div class="project-links">
+
+                <a
+                    href="https://github.com/ArjunIyyappanAv/Evidence-RAG"
+                    target="_blank">
+
+                    GitHub →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FOOD CLASSIFICATION -->
+
+        <div class="project">
+
+
+            <div>
+
+                <h3>
+                    South Indian Food Classification
+                </h3>
+
+
+                <div class="project-description">
+
+                    Computer vision classification project developed
+                    during research internship using YOLOv11,
+                    achieving 72.7% accuracy.
+
+                </div>
+
+
+                <div class="tech">
+
+                    Python · YOLOv11 · PyTorch · Computer Vision
+
+                </div>
+
+            </div>
+
+
+            <div class="project-links">
+
+                <span style="color:#999;">
+                    Research
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- BRAIN TUMOR -->
+
+        <div class="project">
+
+
+            <div>
+
+                <h3>
+                    AR/VR Brain Tumor Visualizer
+                </h3>
+
+
+                <div class="project-description">
+
+                    Medical imaging project for brain tumor
+                    visualization and segmentation using
+                    modern deep learning tools.
+
+                </div>
+
+
+                <div class="tech">
+
+                    MONAI · PyTorch · BRATS · Computer Vision
+
+                </div>
+
+            </div>
+
+
+            <div class="project-links">
+
+                <span style="color:#999;">
+                    Research
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PARKVISION -->
+
+        <div class="project">
+
+
+            <div>
+
+                <h3>
+                    ParkVision AI
+                </h3>
+
+
+                <div class="project-description">
+
+                    Computer vision project combining Swin
+                    Transformer representations with
+                    GLCM-based texture features.
+
+                </div>
+
+
+                <div class="tech">
+
+                    Python · Swin Transformer · GLCM · ML
+
+                </div>
+
+            </div>
+
+
+            <div class="project-links">
+
+                <span style="color:#999;">
+                    ML
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- MOVIE EMOTION -->
+
+        <div class="project">
+
+
+            <div>
+
+                <h3>
+                    Multimodal Movie Emotion Analysis
+                </h3>
+
+
+                <div class="project-description">
+
+                    Research pipeline combining subtitle sentiment,
+                    visual features and facial emotion signals for
+                    scene-level emotional analysis.
+
+                </div>
+
+
+                <div class="tech">
+
+                    Python · RoBERTa · NLP · Computer Vision
+
+                </div>
+
+            </div>
+
+
+            <div class="project-links">
+
+                <span style="color:#999;">
+                    Research
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
+
+<section id="education" class="section">
+
+
+    <h2 class="section-title">
+        Education
+    </h2>
+
+
+    <div class="box">
+
+
+        <div class="education">
+
+
+            <div class="education-header">
+
+                <h3>
+                    Vellore Institute of Technology, Chennai
+                </h3>
+
+                <span class="education-date">
+                    2023 – 2027
+                </span>
+
+            </div>
+
+
+            <p>
+
+                Bachelor of Technology in Electronics and
+                Computer Engineering
+
+            </p>
+
+
+            <p>
+
+                CGPA:
+                <strong>8.99</strong>
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="education">
+
+
+            <div class="education-header">
+
+                <h3>
+                    Srimathi Sundaravalli Memorial School, Chennai
+                </h3>
+
+                <span class="education-date">
+                    2022 – 2023
+                </span>
+
+            </div>
+
+
+            <p>
+                XII Grade — Computer Science
+            </p>
+
+
+            <p>
+
+                Percentage:
+                <strong>97%</strong>
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+
+<!-- =========================================================
+     RIGHT COLUMN
+========================================================= -->
+
+<aside>
+
+
+<!-- =========================================================
+     CODECHEF
+========================================================= -->
+
+<section class="section">
+
+
+    <h2 class="section-title">
+        CodeChef
+    </h2>
+
+
+    <div class="box codechef-stats">
+
+
+        <div class="cc-line">
+
+            <span class="cc-label">
+                Rating
+            </span>
+
+            <strong>
+                1230
+            </strong>
+
+        </div>
+
+
+        <div class="cc-line">
+
+            <span class="cc-label">
+                Highest Rating
+            </span>
+
+            <strong>
+                1282
+            </strong>
+
+        </div>
+
+
+        <div class="cc-line">
+
+            <span class="cc-label">
+                Problems Solved
+            </span>
+
+            <strong>
+                95
+            </strong>
+
+        </div>
+
+
+        <div class="cc-line">
+
+            <span class="cc-label">
+                Contests
+            </span>
+
+            <strong>
+                10
+            </strong>
+
+        </div>
+
+
+        <div class="cc-line">
+
+            <span class="cc-label">
+                Global Rank
+            </span>
+
+            <strong>
+                80,269
+            </strong>
+
+        </div>
+
+
+        <div class="cc-line">
+
+            <span class="cc-label">
+                Country Rank
+            </span>
+
+            <strong>
+                76,959
+            </strong>
+
+        </div>
+
+
+        <div class="cc-line">
+
+            <span class="cc-label">
+                Division
+            </span>
+
+            <strong>
+                Div 4
+            </strong>
+
+        </div>
+
+
+        <div style="margin-top:12px;">
+
+            <a
+                href="https://www.codechef.com/users/arjuniyyappan"
+                target="_blank">
+
+                View CodeChef profile →
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
+
+<section id="skills" class="section">
+
+
+    <h2 class="section-title">
+        Skills
+    </h2>
+
+
+    <div class="box skills">
+
+
+        <div class="skill-group">
+
+            <label>
+                Languages
+            </label>
+
+            <div class="skill-list">
+
+                Java · Go · JavaScript · SQL
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-group">
+
+            <label>
+                Backend
+            </label>
+
+            <div class="skill-list">
+
+                Spring Boot · Node.js · Express.js · REST APIs
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-group">
+
+            <label>
+                Frontend
+            </label>
+
+            <div class="skill-list">
+
+                React.js
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-group">
+
+            <label>
+                Databases
+            </label>
+
+            <div class="skill-list">
+
+                MongoDB · PostgreSQL · NeonDB
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-group">
+
+            <label>
+                AI / ML
+            </label>
+
+            <div class="skill-list">
+
+                TensorFlow · PyTorch · OpenCV ·
+                YOLOv8/v11 · MONAI
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-group">
+
+            <label>
+                Tools
+            </label>
+
+            <div class="skill-list">
+
+                Git · AWS · Webhooks · Linux
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ACHIEVEMENTS
+========================================================= -->
+
+<section class="section">
+
+
+    <h2 class="section-title">
+        Achievements
+    </h2>
+
+
+    <div class="box">
+
+
+        <div class="achievement">
+
+            <strong>
+                INNOVATE 2.0 — Runner-up
+            </strong>
+
+            <br>
+
+            Developed an end-to-end SME services platform
+            featuring live tracking, freshness-index monitoring
+            and ML-driven business insights.
+
+        </div>
+
+
+        <div class="achievement">
+
+            <strong>
+                Velociraptor Racing — Electronics Team
+            </strong>
+
+            <br>
+
+            Contributed to vehicle electronics, integration and
+            race-day operations while building an electric go-kart
+            from scratch. Team secured the Best Pit Crew award.
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CERTIFICATIONS
+========================================================= -->
+
+<section class="section">
+
+
+    <h2 class="section-title">
+        Certifications
+    </h2>
+
+
+    <div class="box">
+
+
+        <div class="achievement">
+            Cisco — Python Beginner
+        </div>
+
+
+        <div class="achievement">
+            Cisco — JavaScript Beginner
+        </div>
+
+
+        <div class="achievement">
+            Udemy — Web Developer Bootcamp
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RESUME
+========================================================= -->
+
+<section class="section">
+
+
+    <h2 class="section-title">
+        Resume
+    </h2>
+
+
+    <div class="box resume-box">
+
+
+        <div>
+
+            <div class="resume-title">
+                Arjun I — Resume
+            </div>
+
+            <div class="resume-subtitle">
+                2026
+            </div>
+
+        </div>
+
+
+        <!-- Replace this href with your exact Google Drive URL -->
+
+        <a
+            class="resume-button"
+            href="https://drive.google.com/file/d/1S_eNkWaAM9CI6l8MFKQLmAEGmiM67H7W/view?usp=sharing"
+            target="_blank">
+
+            View Resume →
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+</aside>
+
+
+</div>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+    <div>
+
+        Arjun I · Electronics & Computer Engineering ·
+        VIT Chennai
+
+    </div>
+
+
+    <div style="margin-top:4px;">
+
+
+        <a
+            href="mailto:arjun.iyyappan.2005@gmail.com">
+
+            arjun.iyyappan.2005@gmail.com
+
+        </a>
+
+
+        <span class="keyboard-hint">
+
+            press <kbd>G</kbd> for GitHub
+
+        </span>
+
+
+    </div>
+
+
+    <div class="footer-joke">
+
+        404: MOTIVATION NOT FOUND · STILL CODING ANYWAY
+
+    </div>
+
+
+</footer>
+
+
+</main>
+
+
+
+<script>
+
+/* =========================================================
+   COMPILING STATUS
+========================================================= */
+
+const statusText =
+    document.getElementById("statusText");
+
+
+setTimeout(function() {
+
+    statusText.textContent =
+        "compiled successfully ✓";
+
+}, 1800);
+
+
+
+/* =========================================================
+   GITHUB KEYBOARD SHORTCUT
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        const tag =
+            document.activeElement.tagName;
+
+
+        if (
+            event.key.toLowerCase() === "g" &&
+            tag !== "INPUT" &&
+            tag !== "TEXTAREA"
+        ) {
+
+            window.open(
+                "https://github.com/ArjunIyyappanAv",
+                "_blank"
+            );
+
+        }
+
+    }
+);
+
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+const sections =
+    document.querySelectorAll("section[id]");
+
+const navLinks =
+    document.querySelectorAll(".nav-links a");
+
+
+window.addEventListener(
+    "scroll",
+    function() {
+
+        let current = "";
+
+
+        sections.forEach(
+            function(section) {
+
+                const sectionTop =
+                    section.offsetTop - 100;
+
+
+                if (
+                    window.scrollY >= sectionTop
+                ) {
+
+                    current =
+                        section.getAttribute("id");
+
+                }
+
+            }
+        );
+
+
+        navLinks.forEach(
+            function(link) {
+
+                link.style.fontWeight =
+                    "normal";
+
+
+                if (
+                    link.getAttribute("href") ===
+                    "#" + current
+                ) {
+
+                    link.style.fontWeight =
+                        "bold";
+
+                }
+
+            }
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
